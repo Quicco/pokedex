@@ -1,0 +1,125 @@
+.h1 {
+  margin: 1rem;
+  text-align: center;
+}
+
+.main-heading {
+  border-bottom: 4px solid black;
+  font-size: 1.5rem;
+  background-color: red;
+  color: white;
+}
+
+.data {
+  font-size: 1.25rem;
+}
+
+/*========
+  Form
+=========*/
+
+.regions-form {
+  border: 1px solid rgb(140, 144, 140);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs > input{
+  margin-right: 1rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+
+/*==========
+Table
+===========*/
+table {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.data {
+  cursor: pointer;
+}
+
+
+#type-fire {
+  background-color: #DB2C34ff;
+  color: white;
+}
+
+#type-water {
+  background-color: #6390F0;
+  color: white;
+}
+
+#type-grass {
+  background-color: #7AC74C;
+  color: white;
+}
+#type-normal {
+  background-color: #A8A77A;
+  color: white;
+}
+#type-flying {
+  background-color: #A98FF3;
+  color: white;
+}
+#type-electric {
+  background-color: #F7D02C;
+  color: white;
+}
+#type-poison {
+  background-color: #A33EA1;
+  color: white;
+}
+#type-rock{
+  background-color: #B6A136;
+  color: white;
+}
+#type-ground{
+  background-color: #E2BF65;
+  color: white;
+}
+#type-fighting {
+  background-color: #C22E28;
+  color: white;
+}
+#type-ice {
+  background-color: #96D9D6;
+  color: white;
+}
+#type-bug {
+  background-color: #A6B91A;
+  color: white;
+}
+#type-psychic {
+  background-color: #F95587;
+  color: white;
+}
+#type-dark {
+  background-color: #705746;
+  color: white;
+}
+#type-steel {
+  background-color: #B7B7CE;
+  color: white;
+}
+#type-fairy {
+  background-color: #D685AD;
+  color: white;
+}
+#type-dragon {
+  background-color: #6F35FC;
+  color: white;
+}
+#type-ghost {
+  background-color: #735797;
+  color: white;
+}
+
+

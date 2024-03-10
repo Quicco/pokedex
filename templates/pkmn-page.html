@@ -1,0 +1,13 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+<div class="pokemon-details">
+        <img class="pkmn-img" src="{{ pb.SpriteResource('pokemon', id).url }}" alt="Picture of the Pokémon with ID {{ id }}">
+        <h2>DexNo: {{ id }}</h2>
+        <p>Name: {{ name }}</p>
+        <p>Type: {{ p_type }}</p>
+        <p>Type: {{ s_type }}</p>
+        <p>Region: {{ region}} </p>
+    </div>
+
+  {% endblock %}

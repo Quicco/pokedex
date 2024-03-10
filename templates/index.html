@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% block body %}
+
+<h1 class="h1">Please select a Region</h1>
+<div class="container">
+  <form class="regions-form" action="/dex" method="post">
+    <div class="inputs">
+      {% for region in choices %}
+      <label for="{{ region.lower() }}">{{ region }}</label>
+      <input
+        class="form-check-input"
+        autofocus
+        autocomplete="off"
+        type="checkbox"
+        value="{{ region }}"
+        name="region"
+        id="{{ region.lower() }}"
+      />
+      {% endfor %}
+    </div>
+    <button type="submit" class="form-btn btn btn-secondary">Choose</button>
+  </form>
+  
+  {% block content %} {% endblock %}
+</div>
+{% endblock %}
