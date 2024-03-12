@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.white {
+  color: white;
+}
+
 .main-heading {
   border-bottom: 4px solid black;
   font-size: 1.5rem;
@@ -35,7 +39,7 @@ label {
 
 
 /*==========
-Table
+   Table
 ===========*/
 table {
   margin-top: 1rem;
@@ -46,6 +50,88 @@ table {
   cursor: pointer;
 }
 
+.pokedex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*============/
+ Pokémon Card
+==============*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./pokemon-bg.png);
+  background-size: contain;
+  height: 100dvh;
+}
+
+.card {
+  scale: 1.25;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-pokedex {
+  margin: 10px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 4px;
+  transition: all 300ms ease-out;
+}
+
+.card-pokedex:hover{
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.card-dex {
+  background-color: beige;
+  color: #000;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.card-name {
+  color: #000;
+  font-weight: 700;
+}
+.pkmn-card-img {
+  margin-bottom: .5rem;
+  background-color: beige;
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+.typing {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-type {
+  color: #000;
+  font-weight: 600;
+}
+
+.go-back {
+  position: absolute;
+  top: 2rem;
+  left: 10rem;
+}
 
 #type-fire {
   background-color: #DB2C34ff;

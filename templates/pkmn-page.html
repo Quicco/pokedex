@@ -1,13 +1,32 @@
-{% extends "layout.html" %} 
+{% extends "layout.html" %} {% block body %}
+<div class="container card-container">
+  <button class="form-btn btn btn-secondary go-back" type="submit">
+    Go back
+  </button>
 
-{% block body %}
-<div class="pokemon-details">
-        <img class="pkmn-img" src="{{ pb.SpriteResource('pokemon', id).url }}" alt="Picture of the Pokémon with ID {{ id }}">
-        <h2>DexNo: {{ id }}</h2>
-        <p>Name: {{ name }}</p>
-        <p>Type: {{ p_type }}</p>
-        <p>Type: {{ s_type }}</p>
-        <p>Region: {{ region}} </p>
+  <div
+    class="card"
+    style="width: 18rem"
+    id="{% if p_type %}type-{{ p_type|lower }}{% endif %}"
+  >
+    <div class="bg-circle"></div>
+    <img
+      src="{{ pb.SpriteResource('pokemon', id).url }}"
+      class="pkmn-card-img"
+      alt="Picture of the Pokémon with ID {{ id }}"
+    />
+    <div class="card-body">
+      <h5 class="card-dex">DexNo: {{ id }}</h5>
+      <h4 class="card-name">{{ name }}</h4>
+      <div class="typing">
+        <p class="card-type">Type: <span class="white">{{ p_type }}</span></p>
+        <p class="card-type">
+          Type: {% if s_type is none %} --- {% else %}
+          <span class="white">{{ s_type }}</span> {% endif %}
+        </p>
+      </div>
     </div>
+  </div>
+</div>
 
-  {% endblock %}
+{% endblock %}

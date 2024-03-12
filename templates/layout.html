@@ -6,7 +6,7 @@
     <!--CSS-->
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='style.css')}}"
+      href="/static/style.css"
     />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,5 +24,5 @@
     {% block body %}{% endblock %}
   </body>
 
-  <script src="{{ url_for('static', filename='scripts/index.js') }}" ></script>
+  <script src="/static/scripts/index.js" ></script>
 </html>
