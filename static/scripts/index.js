@@ -7,6 +7,7 @@ for (const card of cards) {
     form.submit();
   });
 }
+
 // Add an eventListener to every row
 // for (let i = 0; i < rows.length; i++) {
 //   rows[i].addEventListener('click', () => {
